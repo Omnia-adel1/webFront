@@ -1,0 +1,84 @@
+
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .layout {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .amount-owed {
+    display: flex;
+    align-items: center;
+    background-color: #7a9eb9; 
+    padding: 30px 40px; 
+    border-radius: 20px; 
+    width: 670px; 
+    justify-content: space-between;
+    margin-bottom: 30px; 
+    position: relative;
+    top: -40px; 
+  }
+  
+  .amount-text h3 {
+    font-size: 26px; 
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .amount-text p {
+    font-size: 30px; 
+    color: white;
+    font-weight: bold;
+  }
+  
+  .amount-icon {
+    width: 150px;
+    height: 75px;
+  }
+  
+  .buttons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .button-box {
+    width: 200px;
+    height: 200px;
+    background-color: #feffff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    text-align: center;
+  }
+  
+  .button-box img {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+  }
+  
+  .button-label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495E;
+    margin-top: 10px;
+  }

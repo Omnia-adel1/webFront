@@ -1,0 +1,54 @@
+.classes-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .classes-content {
+    padding: 40px;
+    padding-top: 90px; /* offset for navbar */
+    max-width: 1000px;
+    margin-left: 25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f9f3f3;
+  }
+  
+  .classes-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: rgb(55, 51, 51);
+  }
+  
+  .classes-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .class-card {
+    background: #1b4b5a;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+  }
+  
+  .class-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .class-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .class-card h3 span {
+    font-weight: 400;
+    color: #f8e4e4;
+    font-size: 1rem;
+  }
+  
+  .class-card p {
+    margin: 4px 0;
+    font-size: 1rem;
+  }
+  

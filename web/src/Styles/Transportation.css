@@ -1,0 +1,134 @@
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  margin-left: 350px; /* Offset to leave space for the navbar */
+}
+.Navbar {
+  height: 100%;
+}
+
+/* Bus Ride Box */
+.bus-ride-box {
+  background-color: #6b7c85;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 600px;  /* Reduced max-width to make it smaller */
+  text-align: center;
+  margin-bottom: 1rem;  /* Adjusted margin */
+}
+
+/* Timeline */
+.bus-timeline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 1rem 0;
+  font-size: 0.9rem;
+  color: white;
+  width: 100%;
+  border-top: 2px solid white;  /* Horizontal line for the timeline */
+}
+
+.bus-timeline span {
+  text-align: center;
+  position: relative;
+  flex: 1;
+}
+
+.bus-timeline span::before {
+  content: '';
+  position: absolute;
+  top: -6px; /* Position the dot just above the line */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.bus-timeline .current::before {
+  background-color: #00aaff; /* Current station dot color */
+}
+
+.bus-timeline .current {
+  color: #00aaff;
+  font-weight: bold;
+}
+
+/* Bus Status */
+.bus-status {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 500;
+}
+
+/* Tiles */
+.tiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.tile {
+  background-color: #2f4858;
+  color: white;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.tile img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.tile p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+
+.Navbar {
+  width: 350px;
+  background-color: #c5d9e2;
+  height: 100%; /* Ensure the Navbar height matches the page content */
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .tiles {
+    grid-template-columns: 1fr;
+  }
+
+  .bus-timeline {
+    flex-direction: column;
+  }
+}

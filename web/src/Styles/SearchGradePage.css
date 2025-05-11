@@ -1,0 +1,103 @@
+.search-grade-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-grade-content {
+    padding: 40px;
+    padding-top: 90px; /* offset for navbar */
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .search-grade-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: #005f99;
+  }
+  
+  .search-result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .result-topic {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #007acc;
+  }
+  
+  .result-grade {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 10px;
+    min-width: 60px;
+  }
+  
+  .grade-A {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .grade-A- {
+    background-color: #66bb6a;
+    color: white;
+  }
+  
+  .grade-B {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  .grade-B+ {
+    background-color: #ffa726;
+    color: white;
+  }
+  
+  .grade-C {
+    background-color: #ff5722;
+    color: white;
+  }
+  
+  .no-result {
+    font-size: 1.2rem;
+    color: #ff5722;
+    text-align: center;
+  }
+  

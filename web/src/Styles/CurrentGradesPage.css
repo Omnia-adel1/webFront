@@ -1,0 +1,71 @@
+.grades-page-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grades-content {
+    padding: 40px;
+    padding-top: 90px; /* offset for navbar */
+    max-width: 1000px;
+    margin-left: 25%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+  }
+  
+  .grades-content h1 {
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .grades-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+  .course-card {
+    padding: 20px;
+    background-color: #f9fafb;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .course-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .course-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #007acc;
+  }
+  
+  .course-grade {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  .course-grade[data-grade="B"] {
+    color: #ff9800;
+  }
+  
+  .course-grade[data-grade="B+"] {
+    color: #ff9800;
+  }
+  
+  .course-grade[data-grade="C"] {
+    color: #ff5722;
+  }
+  

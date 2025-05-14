@@ -18,9 +18,9 @@ function AccountPage() {
         <div className="account-info">
           <div className="account-section">
             <h3>👤 Profile Information</h3>
-            <p><strong>Name:</strong> Rana Sakr</p>
-            <p><strong>Email:</strong> rana.sakr.2023@aiu.edu.eg</p>
-            <p><strong>Student ID:</strong> 23990102</p>
+            <p><strong>Name:</strong> Omnia Adel</p>
+            <p><strong>Email:</strong> omnia.adel.2023@aiu.edu.eg</p>
+            <p><strong>Student ID:</strong> 22101925</p>
           </div>
 
           <div className="account-section">
